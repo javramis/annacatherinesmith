@@ -46,11 +46,11 @@ const PRODUCTIONS = [
     photos: ["2022-mamma-mia-2", "2022-mamma-mia-3", "2022-mamma-mia-4", "2022-mamma-mia-1"] },
   { show: "The Little Mermaid", role: "Ariel", where: "Timber Lake Playhouse", year: 2019,
     photos: ["2019-the-little-mermaid-1", "2019-the-little-mermaid-2"] },
-  { show: "Into the Woods", role: "", where: "Timber Lake Playhouse", year: 2019,
+  { show: "Into the Woods", role: "Florinda", where: "Timber Lake Playhouse", year: 2019,
     photos: ["2019-into-the-woods-2", "2019-into-the-woods-1"] },
   { show: "Beauty and the Beast", role: "Belle", where: "Timber Lake Playhouse", year: 2018,
     photos: ["2018-beauty-and-the-beast-2", "2018-beauty-and-the-beast-1"] },
-  { show: "The Full Monty", role: "", where: "Timber Lake Playhouse", year: 2018,
+  { show: "The Full Monty", role: "Pam", where: "Timber Lake Playhouse", year: 2018,
     photos: ["2018-the-full-monty-1", "2018-the-full-monty-3", "2018-the-full-monty-2"] },
   // Television
   { show: "Saturday Night Live", role: "Stand-in, featured background", where: "NBC", year: "",
