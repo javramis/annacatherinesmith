@@ -7,6 +7,7 @@ const thumb = (code) => `https://i.vimeocdn.com/video/${code}-d_640?region=us`;
 const VIDEOS = [
   // On camera (booked work first)
   { id: "1202221704", title: "Pepsi Drips, national commercial", secs: 15, cat: "screen", t: "2169794326-32e854cb8e5a09128905cb69aff07a4522020cf94b23f61dc93a491ff51fa63a" },
+  { id: "1201813848", title: "Golden Corral, national commercial", secs: 14, cat: "screen", t: "2169243165-effe15e1a34c9e11a50ac355b81e092a43fd4b3ad5251743e66e4f0f1265c0ba" },
   { id: "1211539380", title: "On-camera clip: dramedy", secs: 76, cat: "screen", t: "2181738192-cdbe94a83288e0cb710f1048e17f43bf1af5fc45179f22c08a1147b6fd97d30d", featured: "On camera" },
   { id: "1202637002", title: "Mockumentary comedy clips", secs: 55, cat: "screen", t: "2170382830-78599b076d4243ab3a91228199dc941cbd8da5ceee0440436aa5a4cd3e7a832e" },
   { id: "1202637359", title: "“Back Home,” horror short", secs: 302, cat: "screen", t: "2170385257-73bd12e72c9668b097e479dead82d9046ba27c8c54dc8b7cfd92413669aab27d" },
@@ -30,10 +31,10 @@ const VIDEOS = [
 
 const PRODUCTIONS = [
   // On camera
-  { show: "Pepsi Drips", role: "Hero", where: "National commercial, Regal Cinemas", year: "",
-    video: "1202221704", photos: [] },
-  { show: "Golden Corral", role: "Principal", where: "National commercial, on set", year: "",
-    photos: ["bts-1", "bts-2"] },
+  { show: "Pepsi Drips", role: "Hero", where: "National commercial, Regal Cinemas", year: 2025,
+    video: "1202221704", photos: ["pepsi-bts-2", "pepsi-bts-1"] },
+  { show: "Golden Corral", role: "Principal", where: "National commercial", year: 2024,
+    video: "1201813848", photos: ["bts-2", "bts-1"] },
   // Stage
   { show: "The Last Five Years", role: "Cathy Hiatt", where: "River & Rail Theatre", year: 2026,
     photos: ["2026-last-five-years-3", "2026-last-five-years-4", "2026-last-five-years-1", "2026-last-five-years-6", "2026-last-five-years-5", "2026-last-five-years-8", "2026-last-five-years-2", "2026-last-five-years-11", "2026-last-five-years-7", "2026-last-five-years-10"] },
@@ -57,7 +58,7 @@ const PRODUCTIONS = [
 ];
 
 // Photo sizes (width, height), used to lay out photos before they load.
-const SIZES = {"2018-beauty-and-the-beast-1": [960, 638], "2018-beauty-and-the-beast-2": [1600, 1066], "2018-the-full-monty-1": [750, 500], "2018-the-full-monty-2": [750, 422], "2018-the-full-monty-3": [750, 500], "2019-into-the-woods-1": [646, 431], "2019-into-the-woods-2": [750, 496], "2019-the-little-mermaid-1": [750, 1034], "2019-the-little-mermaid-2": [750, 492], "2022-mamma-mia-1": [1280, 1600], "2022-mamma-mia-2": [1760, 990], "2022-mamma-mia-3": [1376, 1080], "2022-mamma-mia-4": [1500, 2000], "2023-fun-home-1": [2000, 1504], "2023-fun-home-2": [2000, 1622], "2023-fun-home-3": [2000, 1285], "2023-scarlet-pimpernel-1": [1125, 1407], "2026-last-five-years-1": [1333, 2000], "2026-last-five-years-10": [1333, 2000], "2026-last-five-years-11": [1067, 1600], "2026-last-five-years-2": [1067, 1600], "2026-last-five-years-3": [2000, 1333], "2026-last-five-years-4": [1333, 2000], "2026-last-five-years-5": [1067, 1600], "2026-last-five-years-6": [1067, 1600], "2026-last-five-years-7": [1067, 1600], "2026-last-five-years-8": [1333, 2000], "2026-last-five-years-9": [1290, 1590], "bts-1": [1500, 2000], "bts-2": [720, 540], "headshot-1": [1333, 2000], "headshot-2": [1544, 2000], "headshot-3": [1084, 1376], "headshot-4": [1333, 2000], "headshot-5": [1333, 2000], "snl-1": [2000, 836], "snl-2": [2000, 1122], "snl-3": [2000, 838], "snl-4": [1472, 795]};
+const SIZES = {"2018-beauty-and-the-beast-1": [960, 638], "2018-beauty-and-the-beast-2": [1600, 1066], "2018-the-full-monty-1": [750, 500], "2018-the-full-monty-2": [750, 422], "2018-the-full-monty-3": [750, 500], "2019-into-the-woods-1": [646, 431], "2019-into-the-woods-2": [750, 496], "2019-the-little-mermaid-1": [750, 1034], "2019-the-little-mermaid-2": [750, 492], "2022-mamma-mia-1": [1280, 1600], "2022-mamma-mia-2": [1760, 990], "2022-mamma-mia-3": [1376, 1080], "2022-mamma-mia-4": [1500, 2000], "2023-fun-home-1": [2000, 1504], "2023-fun-home-2": [2000, 1622], "2023-fun-home-3": [2000, 1285], "2023-scarlet-pimpernel-1": [1125, 1407], "2026-last-five-years-1": [1333, 2000], "2026-last-five-years-10": [1333, 2000], "2026-last-five-years-11": [1067, 1600], "2026-last-five-years-2": [1067, 1600], "2026-last-five-years-3": [2000, 1333], "2026-last-five-years-4": [1333, 2000], "2026-last-five-years-5": [1067, 1600], "2026-last-five-years-6": [1067, 1600], "2026-last-five-years-7": [1067, 1600], "2026-last-five-years-8": [1333, 2000], "2026-last-five-years-9": [1290, 1590], "bts-1": [1500, 2000], "bts-2": [720, 540], "headshot-1": [1333, 2000], "headshot-2": [1544, 2000], "headshot-3": [1084, 1376], "headshot-4": [1333, 2000], "headshot-5": [1333, 2000], "pepsi-bts-1": [720, 1280], "pepsi-bts-2": [1200, 1600], "snl-1": [2000, 836], "snl-2": [2000, 1122], "snl-3": [2000, 838], "snl-4": [1472, 795]};
 
 const PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M3 1.5v13l11-6.5z"/></svg>';
 const fmt = (s) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
