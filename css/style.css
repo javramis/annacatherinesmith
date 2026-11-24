@@ -240,7 +240,7 @@ td:first-child { font-weight: 400; }
 
 /* Press */
 .press { background: var(--linen); padding: var(--section) 0; }
-.quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(32px, 4vw, 56px) clamp(24px, 4vw, 48px); }
+.quotes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(32px, 4vw, 56px) clamp(24px, 4vw, 48px); }
 .quote { margin: 0; }
 .quote-lg { grid-column: 1 / -1; max-width: 900px; }
 .quote blockquote { margin: 0 0 16px; font-family: var(--serif); font-size: clamp(24px, 2.4vw, 30px); line-height: 1.22; }
@@ -282,7 +282,6 @@ td:first-child { font-weight: 400; }
 /* Responsive */
 @media (max-width: 960px) {
   .featured { grid-template-columns: minmax(0, 1fr); }
-  .quotes { grid-template-columns: 1fr 1fr; }
   .headshots { grid-template-columns: repeat(3, 1fr); }
   .credit-cols, .contact-grid { grid-template-columns: minmax(0, 1fr); }
 }
