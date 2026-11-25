@@ -22,10 +22,10 @@ const VIDEOS = [
   { id: "1246704928", title: "Performance reel", secs: 60, cat: "stage", t: "2226200155-48234dbe6cac02c0c44da2d111709c57b7622401a8ddd786a2e497a8d4ed3021" },
   { id: "1201867868", title: "Vocal reel", secs: 106, cat: "stage", t: "2169317882-745e95aa59565127860ca277af2a3f270d91b862baf3d25f0856b8b2560ee22a" },
   { id: "1201881320", title: "“Bring Me to Life,” 54 Below", secs: 71, cat: "stage", t: "2169335323-76b34aee06df305c52297ac969ed6bc8e02149ccac9f64470b4b917c63af2bf6" },
-  { id: "1201866295", title: "“If I Loved You”", secs: 111, cat: "stage", t: "2169312052-537dad6b644a9b63b8c2e2aa030e371d538ddba9608e7e266d6cf6aabc8492f2" },
-  { id: "1201823069", title: "“Being Alive”", secs: 96, cat: "stage", t: "2169253109-c55a3401b2b1e6f172f264face18df594966277331ebe8afa5bf67272a61f738" },
+  { id: "1201866295", title: "“If I Loved You,” Carousel", secs: 111, cat: "stage", t: "2169312052-537dad6b644a9b63b8c2e2aa030e371d538ddba9608e7e266d6cf6aabc8492f2" },
+  { id: "1201823069", title: "“Being Alive,” Company", secs: 96, cat: "stage", t: "2169253109-c55a3401b2b1e6f172f264face18df594966277331ebe8afa5bf67272a61f738" },
   { id: "1201834813", title: "“Johanna,” Sweeney Todd", secs: 108, cat: "stage", t: "2169268187-6e8c2d330b6a2fcaa2a6d57282f0a97ea7572e2fd56b655fb6aa14b4ee919066" },
-  { id: "1201831555", title: "“Bad Idea”", secs: 78, cat: "stage", t: "2169264054-4a3c4797aab9aff570c3d2f7a01fa1c16e12e28818c180a029ef124a85c1ebf6" },
+  { id: "1201831555", title: "“Bad Idea,” Waitress", secs: 78, cat: "stage", t: "2169264054-4a3c4797aab9aff570c3d2f7a01fa1c16e12e28818c180a029ef124a85c1ebf6" },
   { id: "1201835943", title: "“Love Is an Open Door,” Frozen", secs: 70, cat: "stage", t: "2169318765-790bfa81ac8f3ae3b8fb2a2a303ad1bb2e85c862fd4cf29788216cb2d7a4cf50" },
 ];
 
