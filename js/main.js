@@ -35,6 +35,8 @@ const PRODUCTIONS = [
     video: "1202221704", photos: ["pepsi-bts-2", "pepsi-bts-1"] },
   { show: "Golden Corral", role: "Principal", where: "National commercial", year: 2024,
     video: "1201813848", photos: ["bts-2", "bts-1"] },
+  { show: "Saturday Night Live", role: "Stand-in, featured background", where: "NBC", year: "",
+    photos: ["snl-1", "snl-2", "snl-3", "snl-4"] },
   // Stage
   { show: "The Last Five Years", role: "Cathy Hiatt", where: "River & Rail Theatre", year: 2026,
     photos: ["2026-last-five-years-3", "2026-last-five-years-4", "2026-last-five-years-1", "2026-last-five-years-6", "2026-last-five-years-5", "2026-last-five-years-8", "2026-last-five-years-2", "2026-last-five-years-11", "2026-last-five-years-7", "2026-last-five-years-10"] },
@@ -52,9 +54,6 @@ const PRODUCTIONS = [
     photos: ["2018-beauty-and-the-beast-2", "2018-beauty-and-the-beast-1"] },
   { show: "The Full Monty", role: "Pam", where: "Timber Lake Playhouse", year: 2018,
     photos: ["2018-the-full-monty-1", "2018-the-full-monty-3", "2018-the-full-monty-2"] },
-  // Television
-  { show: "Saturday Night Live", role: "Stand-in, featured background", where: "NBC", year: "",
-    photos: ["snl-1", "snl-2", "snl-3", "snl-4"] },
 ];
 
 // Photo sizes (width, height), used to lay out photos before they load.
