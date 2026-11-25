@@ -9,4 +9,4 @@ Website for actor Anna Catherine Smith. Plain HTML, CSS and JavaScript, hosted o
 - `files/`: downloadable résumé
 - `fonts/`: self-hosted Cormorant Garamond and Jost
 
-All links are relative, so the site works at `javramis.github.io/annacatherinesmith` and on a custom domain.
+Live at https://annacatherinesmith.com (domain registered at Squarespace, DNS pointed to GitHub Pages). All links are relative.
